@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let b = +prompt("nhập năm");
+        let a = +prompt("nhậptháng");
+        if (!isNaN(a) && a > 0 && !isNaN(b) && b > 0) {
+            if (b % 400 == 0 || (b % 4 == 0 && b % 100 != 0)) {
+                if (a == 1 || a == 3 || a == 5 || a == 7 || a == 8 || a == 10 || a == 12) {
+                    document.write('có 31 ngày')
+                } else if (a == 2) {
+                    document.write('có 29 ngày')
+                } else {
+                    document.write('có 30ngày')
+                }
+            } else {
+                if (a == 1 || a == 3 || a == 5 || a == 7 || a == 8 || a == 10 || a == 12) {
+                    document.write('có 31 ngày')
+                } else if (a == 2) {
+                    document.write('có 28 ngày')
+                } else {
+                    document.write('có 30ngày')
+                }
+            }
+        } else {
+            document.write("không hợp lệ");
+        }
+
+
+    </script>
+</body>
+
+</html>

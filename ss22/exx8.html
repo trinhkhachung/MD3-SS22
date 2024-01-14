@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a =+prompt('nhap so thu nhat')
+        let b =+prompt('nhap so thu hai')
+        if(!isNaN(a) && !isNaN(b)){
+            let n = prompt('nhập phép toán bạn cần tính')
+            switch(n){
+                case '+':
+                    alert(a+b)
+                    break;
+                case '-':
+                    alert(a-b)
+                    break;
+                case '*':
+                    alert(a*b)
+                    break;
+                case '/':
+                    alert(a/b)
+                    break;
+                default:
+                    alert('không hợp lệ')
+            }
+        }else{
+            alert('không hợp lệ')
+        }
+    </script>
+</body>
+</html>
